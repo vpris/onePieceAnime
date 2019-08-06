@@ -38,13 +38,3 @@ stylingNext.style.color = '#ffffff';
 stylingNext.style.backgroundColor = '#918f90';
 stylingNext.style.fontSize = '6em';
 stylingNext.style.borderRadius = '0';
-
-
-
-
-echo "# 11" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/vpris/11.git
-git push -u origin master
