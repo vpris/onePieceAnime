@@ -38,3 +38,7 @@ stylingNext.style.color = '#ffffff';
 stylingNext.style.backgroundColor = '#918f90';
 stylingNext.style.fontSize = '6em';
 stylingNext.style.borderRadius = '0';
+
+
+if ($(document).height() <= $(window).height())
+    $("footer.footer").addClass("navbar-fixed-bottom");
