@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 header {
@@ -68,18 +69,17 @@ header {
 
 main {
     width: 100%;
-    min-height: 500px;
+    min-height: calc(100% - 490px);
     background: darkgrey;
 }
 
 .container, .mainContainer {
-    background: #82abbd;
+    background: #232123;
     max-height: 500px;
 }
 
 .row, .rowForContents {
-    background: deeppink;
-    height: 400px;
+    /* background: deeppink; */
 }
 
 .titleCarousel {
@@ -129,7 +129,133 @@ main {
     outline: none;
 }
 
+.secondMenu {
+    background: #232123;
+    width: 100%;
+}
+
+.secondMenu nav {
+    height: 60px;
+}
+
 .footer {
     background: #232123;
     height: 220px;
+}
+
+.menu {
+    list-style-type: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+ul.submenu {
+    position: absolute;
+    display: none;
+    max-width: 415px;
+    list-style-type: none;
+}
+
+ul.menu>li:hover ul.submenu {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 30px 30px;
+    border-radius: 6px;
+}
+
+.submenu li {
+
+    height: 20px;
+    margin-right: 20px;
+    border-bottom: 3px solid darkred;
+}
+
+.submenu li:hover {
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+}
+
+.footerWidg {
+    min-height: 220px;
+    max-height: 220px;
+    border-right: 2px solid black;
+}
+
+.footerBear {
+    background-image: url("footerBear.png");
+    height: 150%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    top: -120px;
+    left: 0;
+    /* background: rebeccapurple; */
+}
+
+.aboutProjectFooter {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerWidgSubscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerWidgSubscribe h3 {
+    text-align: center;
+    color: #fff;
+}
+
+.subscribeMe {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialBalls {
+    background: #e84848;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.socialBalls {
+    margin-right: 10px;
+}
+
+.socialBalls i {
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    background: #e84848;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.socialBalls :hover {
+    background: #03A9F4;
+    cursor: pointer;
+}
+
+.aboutProjectFooter {
+    color: #FFFFFF;
 }

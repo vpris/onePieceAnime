@@ -14,9 +14,10 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-hamburger"></i>
+                <i class="fas fa-hamburger"> </i>
+                Жми на бургер
             </button>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 headerMenu">
                     <div class="navbar-brand" href="#">
                         <i class="fab fa-teamspeak"></i>
@@ -88,26 +89,86 @@
                         <div class="item"><h4><img src="https://via.placeholder.com/220x300/03A9F4/FFFFFF?text=Anime+12" alt=""></h4></div>
                     </div>
                 </div>
-                <nav class="mainNav">
-                    <a href="#">Популярное</a>
-                    <a href="#">Приключения</a>
-                    <a href="#">Спорт</a>
-                    <a href="#">Романтика</a>
-                    <a href="#">Фантастика</a>
-                    <a href="#">Школа</a>
-                    <a href="#">Ужасы</a>
-                    <a href="#">Комедия</a>
-                    <a href="#">Сенэн</a>
+            </div>
+            <div class="secondMenu">
+                <nav class="navbar navbar-expand-xl">
+                    <a class="navbar-brand" href="#">Популярное</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto ">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Приключения<span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Спорт</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Романтика</a>
+                            </li>
+                        </ul>
+                        <ul class="menu">
+                            <li>Посмотреть все
+                                <ul class="submenu">
+                                    <li>подпункт 1</li>
+                                    <li>подпункт 2</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 1</li>
+                                    <li>подпункт 2</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 1</li>
+                                    <li>подпункт 2</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 1</li>
+                                    <li>подпункт 2</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 3</li>
+                                    <li>подпункт 3</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
-                <div class="col">Column</div>
-                <div class="col">Column</div>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="navbar-fixed-bottom row-fluid footer">
-            <div class="navbar-inner">
-                <div class="container">
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm footerWidg footerWidgSubscribe">
+                    <h3>Подпишись на нас, будь в курсе новостей</h3>
+                    <div class="subscribeMe">
+                        <div class="socialBalls">
+                            <i class="fab fa-vk"></i>
+                        </div>
+                        <div class="socialBalls">
+                            <i class="fab fa-twitch"></i>
+                        </div>
+                        <div class="socialBalls">
+                            <i class="fas fa-blender"></i>
+                        </div>
+                        <div class="socialBalls">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm footerWidg">
+                    <div class="aboutProjectFooter">
+                        <h3>О проекте</h3>
+                        <p>На нашем проекте вы найдете множество аниме с русской озвучкой, сможете почитать мангу,ну и конечно же пообщаться с интересными людьми.</p>
+                    </div>
+                </div>
+                <div class="col-sm footerWidg">
+                    <div class="footerBear">
+                    </div>
                 </div>
             </div>
         </div>
