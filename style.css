@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    cursor: url(cursor.gif), auto;
 }
 
 header {
@@ -31,7 +32,7 @@ header {
     background: transparent;
     border: none;
     outline: 0;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0 0 20px;
 }
 
 .searchButtonInHeader {
@@ -69,13 +70,35 @@ header {
 
 main {
     width: 100%;
-    min-height: calc(100% - 490px);
+    min-height: calc(100% - 730px);
     background: darkgrey;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.container, .mainContainer {
+.qube {
+    width: 220px;
+    height: 300px;
+    margin: 10px;
+    background: black;
+}
+
+.mainContainer {
     background: #232123;
     max-height: 500px;
+}
+
+.contentContainer {
+    background: darkcyan;
+}
+
+.contentRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
 }
 
 .row, .rowForContents {
