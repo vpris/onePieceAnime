@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    cursor: url(cursor.gif), auto;
+    cursor: url(../images/cursor.gif), auto;
 }
 
 header {
@@ -211,7 +211,7 @@ ul.menu>li:hover ul.submenu {
 }
 
 .footerBear {
-    background-image: url("footerBear.png");
+    background-image: url("../images/footerBear.png");
     height: 150%;
     background-repeat: no-repeat;
     width: 100%;
@@ -286,5 +286,9 @@ ul.menu>li:hover ul.submenu {
 }
 
 .aboutProjectFooter {
+    color: #FFFFFF;
+}
+
+.burger {
     color: #FFFFFF;
 }
