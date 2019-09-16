@@ -1,5 +1,9 @@
 "use strict";
 
+$(document).ready(function(){
+
+//
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -24,6 +28,8 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+});
+//owl buttons
 
 let removePrev = document.querySelector('.owl-prev');
 removePrev.style.display = 'none';

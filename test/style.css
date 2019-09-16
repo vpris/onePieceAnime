@@ -1,0 +1,87 @@
+:root {
+    --nightModeHColor: #181521;
+    --nightModeMColor: #201c2b;
+    --nightModeColor: #392e5c;
+    --nightModeFontColor: #dad8de;
+    --fontSize: 16px;
+    --headerH: 50px;
+    --footerH: 100px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    min-height: 50px;
+    background: var(--nightModeHColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    min-height: calc(100% - var(--headerH) - var(--footerH));
+    background: var(--nightModeMColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    min-height: var(--footerH);
+    background: var(--nightModeHColor);
+}
+
+.inputCont {
+    width: 40%;
+    background: var(--nightModeColor);
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nightModeFontColor);
+}
+
+.buttonSearch span {
+    margin: 0 10px 0 10px;
+}
+
+.buttonSearch i {
+    margin: 0 0 0 10px;
+    font-size: var(--fontSize);
+}
+
+.input {
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    outline: none;
+    font-size: var(--fontSize);
+    color: var(--nightModeFontColor);
+    display: flex;
+    flex: 1;
+}
+
+.ugolok {
+    border: 20px solid transparent;
+    border-left: 20px solid var(--nightModeColor);
+}
+
+.dayOrNight {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: yellow;
+    font-size: 25px;
+}
