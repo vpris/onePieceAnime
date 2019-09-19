@@ -1,7 +1,4 @@
 "use strict";
-
-$(document).ready(function(){
-
 //
 
 $('.owl-carousel').owlCarousel({
@@ -28,7 +25,7 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
-});
+
 //owl buttons
 
 let removePrev = document.querySelector('.owl-prev');

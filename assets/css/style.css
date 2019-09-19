@@ -1,6 +1,9 @@
 :root {
     --reds-color: #e84848;
     --secondReds-color: #c53d3d;
+    --dark: #232123;
+    --white: #ffffff;
+    --gray: darkgray;
 }
 
 html, body {
@@ -71,14 +74,14 @@ header {
 .carousell {
     max-height: 450px;
     width: 100%;
-    background: #03A9F4;
-    border-bottom: 6px solid #232123;
+    background: transparent;
+    border-bottom: 6px solid var(--dark);
 }
 
 main {
     width: 100%;
     min-height: calc(100% - 730px);
-    background: darkgrey;
+    background: var(--gray);
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -299,4 +302,74 @@ ul.menu>li:hover ul.submenu {
 
 .burger {
     color: #FFFFFF;
+}
+
+/* Carousel items */
+
+.items {
+    height: 300px;
+    width: 212px;
+    /*   border: 4px solid black; */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.items img {
+    height: 300px;
+    width: 212px;
+}
+
+.items img:hover {
+    display: block;
+    cursor: pointer;
+}
+
+.hiddenInfo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: #00000069;
+    height: 100%;
+    width: 100%;
+    display: none;
+    color: #fff;
+}
+
+.items:hover .hiddenInfo{
+    display: block;
+    cursor: pointer;
+}
+
+.hiddenInfo h3 {
+    text-align: center;
+}
+
+.hiddenInfoBlock {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonShow {
+    background: var(--reds-color);
+    border: none;
+    height: 30px;
+    width: 90px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.activity {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
