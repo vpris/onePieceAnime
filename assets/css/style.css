@@ -111,6 +111,12 @@ main {
     margin-bottom: 150px;
 }
 
+.contentRowPost {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+
 .row, .rowForContents {
     /* background: deeppink; */
 }
@@ -372,4 +378,40 @@ ul.menu>li:hover ul.submenu {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.player {
+    height: 450px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0px 0px 0px;
+    padding: 0 5px 0 0;
+}
+
+.playerTop {
+    height: 40px;
+    width: 100%;
+    background: #000;
+}
+
+.playerVideo {
+    height: calc(100% - 95px);
+    margin-top: 5px;
+    background: darkgreen;
+    width: 100%;
+}
+
+.playerBottom {
+    height: 55px;
+    width: 100%;
+    background: #000;
+}
+
+.infoSidebar {
+    min-height: 100vh;
+    background: #c53d3d;
+    margin-top: 5px;
 }
