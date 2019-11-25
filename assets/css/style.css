@@ -197,6 +197,7 @@ ul.submenu {
     display: none;
     max-width: 415px;
     list-style-type: none;
+    z-index: 1000000;
 }
 
 ul.menu>li:hover ul.submenu {
