@@ -203,6 +203,7 @@ ul.submenu {
     display: none;
     max-width: 415px;
     list-style-type: none;
+    z-index: 1000000;
 }
 
 ul.menu>li:hover ul.submenu {
@@ -406,7 +407,8 @@ ul.menu>li:hover ul.submenu {
 .playerVideo {
     height: calc(100% - 95px);
     margin-top: 5px;
-    background: darkgreen;
+    margin-bottom: 5px;
+    background: #212529;
     width: 100%;
 }
 
@@ -418,6 +420,30 @@ ul.menu>li:hover ul.submenu {
 
 .infoSidebar {
     min-height: 100vh;
-    background: #c53d3d;
+    background: #212121;
     margin-top: 5px;
+    padding: 5px;
+}
+
+.fullNewsPoster{
+    background-size: cover;
+    background-color: transparent;
+}
+
+.fullNewsPoster img{
+    height: 400px;
+    width: 275px;
+}
+
+.card {
+    height: 400px;
+    width: 270px;
+}
+
+.moreMore {
+    height: 30px;
+    width: 100%;
+    background: #ef3f3f;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
