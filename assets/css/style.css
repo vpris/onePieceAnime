@@ -346,6 +346,7 @@ ul.menu>li:hover ul.submenu {
     background: var(--reds-color);
     cursor: pointer;
     opacity: 1;
+    border: 2px solid #ffffff;
 }
 
 .aboutProjectFooter {
