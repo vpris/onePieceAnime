@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+
 :root {
     --reds-color: #e84848;
     --secondReds-color: #c53d3d;
     --dark: #232123;
     --white: #ffffff;
     --gray: darkgray;
+    --oneFont: 'Neucha', cursive;
+    --oneFontSize: 16px;
+    --twoFont: 'Roboto', serif;
+    --twoFontSize: 14px;
 }
 
 html, body {
@@ -11,6 +18,12 @@ html, body {
     padding: 0;
     height: 100%;
     cursor: url(../images/cursor.gif), auto;
+    font-family: var(--oneFont);
+    font-size: var(--oneFontSize);
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 header {
@@ -27,6 +40,15 @@ header {
     margin-left: 100px;
     display: flex;
     align-items: center;
+}
+
+.headerLogotype  {
+    max-width: 50px;
+}
+
+.headerMenu a:hover {
+    background: var(--secondReds-color);
+    display: block;
 }
 
 .headerMenu a {
@@ -76,11 +98,11 @@ header {
     width: 100%;
     background: transparent;
     border-bottom: 6px solid var(--dark);
+    margin-bottom: 100px;
 }
 
 main {
     width: 100%;
-    min-height: calc(100% - 730px);
     background: var(--gray);
     display: flex;
     flex-flow: wrap;
@@ -88,16 +110,38 @@ main {
     align-items: center;
 }
 
+/* short News */
+
 .qube {
-    width: 220px;
+    width: 205px;
     height: 300px;
-    margin: 10px;
-    background: black;
+    margin: 20px;
+    background: #5a1738;
+    position: relative;
+    padding: 0;
 }
 
+.qube img {
+    width: 205px;
+    height: 300px;
+}
+
+.qube img:hover {
+    display: block;
+    cursor: pointer;
+}
+
+.qube:hover .hiddenInfo{
+    display: block;
+    cursor: pointer;
+}
+
+
+/* end short News */
+
 .mainContainer {
-    background: #232123;
-    max-height: 500px;
+    background: #cccccc;
+    min-height: 500px;
 }
 
 .contentContainer {
@@ -106,9 +150,10 @@ main {
 
 .contentRow {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    margin-bottom: 150px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .contentRowPost {
@@ -117,8 +162,8 @@ main {
 }
 
 
-.row, .rowForContents {
-    /* background: deeppink; */
+.rowForContents {
+    background: deeppink;
 }
 
 .titleCarousel {
@@ -301,6 +346,7 @@ ul.menu>li:hover ul.submenu {
     background: var(--reds-color);
     cursor: pointer;
     opacity: 1;
+    border: 2px solid #ffffff;
 }
 
 .aboutProjectFooter {
@@ -367,10 +413,13 @@ ul.menu>li:hover ul.submenu {
     background: var(--reds-color);
     border: none;
     height: 30px;
-    width: 90px;
+    width: 160px;
     color: #fff;
+    font-weight: bolder;
     cursor: pointer;
     border-radius: 4px;
+    text-transform: uppercase;
+    padding: 5px;
 }
 
 .activity {
@@ -416,6 +465,7 @@ ul.menu>li:hover ul.submenu {
     min-height: 100vh;
     background: #212121;
     margin-top: 5px;
+    margin-bottom: 5px;
     padding: 5px;
 }
 

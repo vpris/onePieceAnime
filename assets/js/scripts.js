@@ -38,7 +38,30 @@ stylingNext.style.right = '-5px';
 stylingNext.style.height = '300px';
 stylingNext.style.width = '80px';
 stylingNext.style.color = '#ffffff';
-stylingNext.style.backgroundColor = '#918f90';
+stylingNext.style.backgroundColor = '#21252985';
 stylingNext.style.fontSize = '6em';
 stylingNext.style.borderRadius = '0';
 
+// footer
+
+(function(){
+
+    footer();
+  
+    $(window).resize(function() {
+      footer();
+    });
+  
+    function footer() {
+      var docHeight = $(window).height(),
+          footerHeight = $('footer').outerHeight(),
+          footerTop = $('footer').position().top + footerHeight;
+  
+      if (footerTop < docHeight) {
+        $('footer').css('margin-top', (docHeight - footerTop) + 'px');
+      }
+    }
+  
+  
+  
+  })();
