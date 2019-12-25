@@ -113,13 +113,19 @@ header {
     cursor: pointer;
 }
 
-.carousel-item img{
-    max-height: 350px;
-}
-
-.carousel-item active img {
-    max-height: 350px;
-}
+.carousel {
+    height: 400px !important;
+  }
+  .carousel-inner img {
+    height: 400px !important;
+    margin: 0 auto;
+  }
+  .carousel-indicators li {
+    border-color: #000;
+  }
+  .carousel-indicators .active {
+    background-color: #000;
+  }
 
 main {
     width: 100%;
