@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>cookie check</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="noindex, nofollow">
+        <meta http-equiv="expires" content="0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <script type="text/javascript" src="cookie_check.min.js"></script>
+        <script type="text/javascript">
+
+//            CookieChecker.setOptions({
+//                allowClose: true
+//            });
+
+            CookieChecker.setCallback(function(cookieAllowed, adblockEnabled) {
+                console.log('Cookie Checker callback');
+
+                console.log(cookieAllowed);
+                console.log(adblockEnabled);
+            });
+
+//            CookieChecker.run({lang: 'en'});
+            CookieChecker.run();
+        </script>
+
+    </body>
+</html>
