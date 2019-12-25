@@ -20,7 +20,7 @@ html, body {
     padding: 0;
     height: 100%;
     cursor: url(../images/cursor.gif), auto;
-    font-family: var(--oneFont);
+    font-family: var(--threeFont);
     font-size: var(--oneFontSize);
     font-style: normal;
     font-variant: normal;
@@ -48,16 +48,34 @@ header {
     max-width: 50px;
 }
 
-.headerMenu a:hover {
+.navbar a {
+    color: #FFFFFF;
+    width: 120px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.navbar a:hover {
     background: var(--secondReds-color);
-    display: block;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
 .headerMenu a {
     text-decoration: none;
     color: #ffffff;
-    margin-right: 10px;
     text-transform: uppercase;
+    font-family: var(--oneFont);
+}
+
+.navbar-brand {
+    margin-top: 10px;
 }
 
 .searchFormInHeader {
@@ -95,12 +113,12 @@ header {
     cursor: pointer;
 }
 
-.carousell {
-    max-height: 450px;
-    width: 100%;
-    background: transparent;
-    border-bottom: 6px solid var(--dark);
-    margin-bottom: 100px;
+.carousel-item img{
+    max-height: 350px;
+}
+
+.carousel-item active img {
+    max-height: 350px;
 }
 
 main {
@@ -146,7 +164,7 @@ main {
 .ultraWide {
     background: blue;
     width: 100%;
-    height: 300px;
+    height: 350px;
     margin: 5px 0 10px 0;
     display: flex;
     flex-direction: row;
@@ -155,24 +173,110 @@ main {
 .posterUltraWide {
     height: 100%;
     width: 220px;
-    background: rebeccapurple;
+    background: url(https://aniraccoon.com/uploads/posts/2019-08/1564750146_swagamoto.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.showMoreAnime {
+    border: none;
+    height: 30px;
+    background: var(--reds-color);
+    color: var(--white);
+    font-family: var(--oneFont);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.showMoreAnime:hover {
+    background: var(--secondReds-color);
 }
 
 .descriptionUltraWide {
     display: flex;
     flex-direction: column;
-    background: azure;
+    background: var(--reds-color);
     height: 100%;
-    width: 68%;
+    width: calc(100% - 220px);
+    align-items: flex-end;
 }
 
 .nameUltraWide {
     height: 30px;
-    background: red;
+    background: var(--reds-color);
+    color: var(--white);
+    font-family: var(--oneFont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.animeDescriptionUltraWide {
+    background: #9E9E9E;
+    width: 98%;
+    height: 100%;
 }
 
 /* end ultra wide */
 
+/* new releases sidebar  */
+
+.newReleasesSidebar {
+    min-height: 100vh;
+    background: var(--dark);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.newReleasesInscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background: var(--dark);
+    color: var(--white);
+    font-family: var(--oneFont);
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.newReleaseItem {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.newReleaseItem img {
+    width: 100%;
+    height: 100%;
+}
+
+.newReleaseItemName {
+    background: #0000009c;
+    margin: -40px 0 0 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: var(--white);
+    font-family: var(--oneFont);
+    overflow: hidden;
+}
+
+/* end new releases sidebar */
 
 
 .mainContainer {
@@ -190,6 +294,7 @@ main {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 10px 0 0;
 }
 
 .contentRowPost {
@@ -238,6 +343,7 @@ main {
 
 .navbar {
     padding: 0;
+    height: 45px;
 }
 
 .showAllCategory {
@@ -261,10 +367,12 @@ main {
 }
 
 .footer {
-    background: #232123;
+    background: var(--dark);
     min-height: 220px;
     display: flex;
     flex-wrap: wrap;
+    font-family: var(--oneFont);
+    color: var(--white);
 }
 
 .menu {
@@ -305,15 +413,15 @@ ul.menu>li:hover ul.submenu {
 
 .footerWidg {
     min-height: 220px;
-    max-height: 220px;
+    /* max-height: 220px; */
     border-right: 2px solid black;
 }
 
 .footerBear {
-    background-image: url("../images/footerBear.png");
+    background-image: url(../images/footerBear.png);
     height: 150%;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 125%;
     position: absolute;
     top: -120px;
     left: 0;

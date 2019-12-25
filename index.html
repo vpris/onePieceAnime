@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/js/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/js/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/mpl.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/dbaffbfc92.js"></script>
+    <script src="assets/js/mpl.js"></script>
+
 
 </head>
 <body>
@@ -19,33 +22,33 @@
                 Жми на бургер
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 headerMenu">
+                <ul class="navbar-nav mr-auto mt-lg-0 headerMenu">
                     <div class="navbar-brand" href="#">
                         <img class="headerLogotype" src="assets/images/Untitled1.png" alt="">
                     </div>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Главная</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Аниме <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Аниме</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Дорамы <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Дорамы</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Сериалы <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сериалы</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Манга <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Манга</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Блог <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Блог</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">О нас <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О нас</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Наша команда<span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Наша команда</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 searchInHeader">
@@ -56,6 +59,15 @@
             </div>
         </nav>
     </header>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/category-my-hero-academia-bg.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
 
     <main>
         <div class="container mainContainer">
@@ -256,9 +268,14 @@
                 <div class="contentRow col-md-9">
 
                     <div class="ultraWide">
-                        <div class="posterUltraWide"></div>
+                        <div class="posterUltraWide">
+                            <button class="showMoreAnime">Подробнее</button>
+                        </div>
                         <div class="descriptionUltraWide">
-                            <div class="nameUltraWide"></div>
+                            <div class="nameUltraWide">Я Сакамото, а что? / Sakamoto Desu ga? [8 / 10]  </div>
+                            <div class="animeDescriptionUltraWide">
+                                
+                            </div>
                         </div>
                     </div>
 
@@ -369,12 +386,34 @@
                         <img src="https://aniraccoon.com/uploads/posts/2019-11/1574259521_img_135376_8.jpg" alt="">
                     </div>
                 </div>
-                <div class="infoSidebar col-md-3">
-                    <div class="fullNewsPoster text-center">
-                        <img src="#" alt="">
+                <div class="newReleasesSidebar col-md-3">
+                    <div class="newReleasesInscription">Новые релизы</div>
+                    <div class="newReleaseItem">
+                        <img src="https://oxvo.ru/wp-content/uploads/2016/04/Sakamoto-desu-ga-2.jpg" alt="Sakamoto">
+                        <div class="newReleaseItemName">Я Сакамото, а что? [8 / 10]</div>
                     </div>
-                    <div class="moreMore">
+                    <div class="newReleaseItem">
+                        <img src="https://www.film.ru/sites/default/files/styles/thumb_1024x450/public/filefield_paths/amazon-the-boys.jpg" alt="Sakamoto">
+                        <div class="newReleaseItemName">Пацаны [8 / 8]</div>
                     </div>
+                    <div class="newReleaseItem">
+                        <img src="http://uskazok.ru/wp-content/uploads/2019/08/melodia.jpg" alt="Sakamoto">
+                        <div class="newReleaseItemName">Веселые мелодии: Рождество</div>
+                    </div>
+                    <div class="newReleaseItem">
+                        <img src="https://i.ytimg.com/vi/0wg1n-x7B0E/maxresdefault.jpg" alt="Sakamoto">
+                        <div class="newReleaseItemName">ДжоДжо [8 / 32]</div>
+                    </div>
+                    <div class="newReleaseItem">
+                        <img src="https://i.ytimg.com/vi/XVD_DQ3HgYc/maxresdefault.jpg" alt="Sakamoto">
+                        <div class="newReleaseItemName">Боруто [90 / -]</div>
+                    </div>
+                    <div class="newReleasesInscription">Енотная музыка</div>
+                    
+                <!-- mpl start-->
+                    <iframe width="100%" height="400" scrolling="yes" frameborder="no" allow="" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/952636543&color=%23e30052&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <!-- mpl end -->
+
                 </div>
             </div>
         </div>
@@ -419,5 +458,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/js/dist/owl.carousel.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+
 </body>
 </html>
