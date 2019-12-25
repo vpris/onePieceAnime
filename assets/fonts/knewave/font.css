@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Knewave';
+  src: url('Knewave.svg#Knewave') format('svg'),
+       url('Knewave.ttf') format('truetype'),
+       url('Knewave.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'knewave';
+  src: url('knewave.eot');
+  src: url('knewave.eot?#iefix') format('embedded-opentype'),
+       url('knewave.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
