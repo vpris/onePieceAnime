@@ -3,7 +3,7 @@
 
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:40,
     nav:true,
     dots:false,
     lazyLoad: true,
