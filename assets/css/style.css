@@ -101,7 +101,7 @@ header {
 
 main {
     width: 100%;
-    /* background: var(--gray); */
+    background: #edeef0;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -140,12 +140,14 @@ main {
 /* Ultra wide */
 
 .ultraWide {
-    background: blue;
+    /* background: blue; */
     width: 100%;
     height: 350px;
     margin: 5px 0 5px 0;
     display: flex;
     flex-direction: row;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
 }
 
 .posterUltraWide {
@@ -207,7 +209,7 @@ main {
 }
 
 .animeDescriptionUltraWide {
-    background: #fbfbfb;
+    background: #fff;
     width: 98%;
     height: 100%;
 }
@@ -215,7 +217,7 @@ main {
 .descriptionItem {
     /* background: rebeccapurple; */
     height: 25px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #e3e4e8;
     padding-right: 10px;
     overflow: hidden;
 }
@@ -223,7 +225,7 @@ main {
 .descriptionItemType {
     /* background: rebeccapurple; */
     height: 25px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #e3e4e8;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
