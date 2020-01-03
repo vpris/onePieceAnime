@@ -3,7 +3,7 @@
 
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:40,
+    margin:10,
     nav:true,
     dots:false,
     lazyLoad: true,
@@ -65,3 +65,8 @@ stylingNext.style.borderRadius = '0';
   
   
   })();
+
+/*  $("html").on("contextmenu",function(e){
+    return false;
+}); */
+

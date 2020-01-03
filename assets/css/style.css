@@ -217,7 +217,7 @@ main {
 .descriptionItem {
     /* background: rebeccapurple; */
     height: 25px;
-    border-bottom: 2px solid #e3e4e8;
+    /* border-bottom: 2px solid #e3e4e8; */
     padding-right: 10px;
     overflow: hidden;
 }
@@ -225,7 +225,7 @@ main {
 .descriptionItemType {
     /* background: rebeccapurple; */
     height: 25px;
-    border-bottom: 2px solid #e3e4e8;
+    /* border-bottom: 2px solid #e3e4e8; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -243,12 +243,17 @@ main {
 .descriptionComments i {
     color: green;
     font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    text-shadow: var(--dark) 0 0 5px;
 }
 
 .descriptionLikes i {
 /*    margin-right: 10px; */
     color: var(--reds-color);
     font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    text-shadow: var(--dark) 0 0 5px;
+    
 }
 
 .descrItemWord {
@@ -349,15 +354,18 @@ main {
 .gridOrList {
     height: 45px;
     margin-top: 5px;
-    background: #fbfbfb;
+    background: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
 }
 
 .gridOrList i {
     font-size: 25px;
+    text-shadow: var(--reds-color) 0 0 5px;
 }
 
 .gridOrList button {
@@ -410,7 +418,7 @@ main {
 }
 
 @media (max-width: 998px) {
-    /* CSS-Ã‘ÂÃ‘â€šÃÂ¸ÃÂ»ÃÂ¸ */
+    /* CSS-ÃƒÆ’Ã¢â‚¬ËœÃƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬ËœÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¸ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â»ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¸ */
     .navbar {
         padding: 0;
         min-height: 45px;
@@ -476,7 +484,7 @@ main {
 }
 
 @media (min-width: 1000px) {
-    /* CSS-Ã‘ÂÃ‘â€šÃÂ¸ÃÂ»ÃÂ¸ */
+    /* CSS-ÃƒÆ’Ã¢â‚¬ËœÃƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬ËœÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¸ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â»ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¸ */
     .navbar {
         padding: 0;
         height: 45px;
@@ -606,7 +614,7 @@ ul.menu>li:hover ul.submenu {
 .footerWidg {
     min-height: 220px;
     /* max-height: 220px; */
-    border-right: 2px solid black;
+    /* border-right: 2px solid black; */
 }
 
 .footerBear {
@@ -697,16 +705,16 @@ ul.menu>li:hover ul.submenu {
 
 .items {
     height: 300px;
-    width: 212px;
+    width: 220px;
     /* border: 4px solid black; */
-    /* margin: 0; */
+    /* margin: 0px; */
     padding: 0;
     position: relative;
 }
 
 .items img {
     height: 300px;
-    width: 212px;
+    width: 220px;
 }
 
 .items img:hover {
@@ -756,6 +764,21 @@ ul.menu>li:hover ul.submenu {
     border-radius: 4px;
     text-transform: uppercase;
     padding: 5px;
+    box-shadow: #fff 0 0 3px 2px;
+}
+
+.carouselLikes i {
+    color: var(--reds-color);
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    text-shadow: #ffffff 0 0 5px;
+}
+
+.carouselComments i {
+    color: var(--green);
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    text-shadow: #ffffff 0 0 5px;
 }
 
 .activity {
@@ -842,4 +865,29 @@ ul.menu>li:hover ul.submenu {
 
 .dropdown-item {
     border-bottom: 2px solid var(--secondReds-color);
+}
+
+.dropdown-item {
+    font-family: var(--onefont);
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    font-family: var(--onefont);
+    font-weight: bold;
+}
+
+.loginInHeader .dropdown-menu {
+    /* width: 220px; */
+    margin-top: 50px;
+}
+
+.loginDroplet {
+    height: 40px;
+    width: 100%;
+    background: var(--secondReds-color);
+}
+
+.headerDropdown {
+    color: var(--white);
 }
