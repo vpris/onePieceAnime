@@ -893,7 +893,7 @@ ul.menu>li:hover ul.submenu {
 }
 
 .playerBottom {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
@@ -1029,3 +1029,22 @@ ul.menu>li:hover ul.submenu {
     color: var(--white);
     margin-bottom: 10px;
 }
+
+/* scrl */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--dark); 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondReds-color); 
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--reds-color)
+  }
