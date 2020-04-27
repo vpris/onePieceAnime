@@ -945,6 +945,10 @@ ul.menu>li:hover ul.submenu {
     background: #232123;
     width: 100%;
     padding: 0 5px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .commentsTop {
@@ -1244,4 +1248,43 @@ ul.menu>li:hover ul.submenu {
         padding-bottom: 12px;
     }
 
+}
+
+.trailerYt {
+    width: 850px;
+    height: 480px;
+}
+
+@media (min-width: 400px) and (max-width: 999px) {
+    .trailerYt {
+        width: 540px;
+        height: 480px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .trailerYt {
+        width: 715px;
+        height: 480px;
+    }
+}
+
+.playerButton {
+    padding: 0 5px 0 5px;
+    background: var(--reds-color);
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: var(--reds-color);
+    background: none;
+    border: 2px solid var(--reds-color);
+}
+
+.playerButton:hover {
+
+    color: var(--white);
+}
+
+.nav-pills .nav-link.active {
+    color: var(--white);
+    background-color: var(--reds-color);
 }
