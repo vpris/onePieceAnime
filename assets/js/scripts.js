@@ -70,3 +70,10 @@ stylingNext.style.borderRadius = '0';
     return false;
 }); */
 
+var releaseDescription = ('.releaseDescription');
+var button = ('.showMoreDescription');
+
+$(button).click(function () {
+      $(releaseDescription).removeClass('releaseDescription').toggleClass('releaseDescriptionActive');
+      $(button).css("display", "none");
+    })
