@@ -1087,6 +1087,11 @@ ul.menu>li:hover ul.submenu {
     color: var(--white);
 }
 
+.trailerYt {
+    width: 850px;
+    height: 480px;
+}
+
 @media (min-width: 400px) and (max-width: 999px) {
     .trailerYt {
         width: 540px;
@@ -1122,6 +1127,19 @@ ul.menu>li:hover ul.submenu {
         color: var(--reds-color);
         background: none;
         border: 2px solid var(--reds-color);
+    }
+
+    .footerBear {
+        background-image: url(../images/footerRaccoon.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        min-width: 186px;
+        position: absolute;
+        top: -10px;
+        left: -5px;
+        background-size: contain;
+        opacity: .5;
+        /* background: rebeccapurple; */
     }
 
 }
@@ -1330,11 +1348,6 @@ ul.menu>li:hover ul.submenu {
         padding-bottom: 12px;
     }
 
-}
-
-.trailerYt {
-    width: 850px;
-    height: 480px;
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
