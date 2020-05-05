@@ -11,12 +11,15 @@
                 result = r["name"];
              for (var i = 0; i < result.length; i++){
                    var obj = 
-                   '<img class="staffUserpic col-md-1" src="' + r["imageLink"][i] + '">' +
-                    '<div class="staffName col-md-5">' + 
-                            r["name"][i] + 
-                    '</div>' +
-                    '<div class="staffPosition col-md-6">' +
-                            r["position"][i] + 
+                   '<div class="staffCard">' +
+                     '<img class="staffUserpic rounded-circle" src="' + r["imageLink"][i] + '">' +
+                     '<div class="staffPosition">' +
+                           r["position"][i] + 
+                     '</div>' +
+                     '<div class="staffName">' + 
+                           r["name"][i] + 
+                     '</div>' +
+                     '<a class="staffReleasesLink" href="#">Список релизов</a>' +
                     '</div>';
                    output += obj;
              }
@@ -29,7 +32,7 @@
       var lelel ='<div class="col-md-6">Ник</div><div class="col-md-6">Позиция</div>';
 
       const info = document.getElementById('staffInfo');
-      info.innerHTML = lelel + output;
+      info.innerHTML = output;
     }
     xhr.send()
  })()

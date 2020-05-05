@@ -14,6 +14,12 @@
     <script src="assets/js/mpl.js"></script>
 </head>
 <body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg">
             <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,5 +141,14 @@
     <script src="assets/js/dist/owl.carousel.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/staff_sheet.js" ></script>
+    <script>
+            window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 1000);
+            }
+      </script>
 </body>
 </html>
