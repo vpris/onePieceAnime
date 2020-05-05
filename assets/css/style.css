@@ -69,9 +69,7 @@ header {
     font-family: var(--oneFont);
 }
 
-.navbar-brand {
-    /* margin-top: 10px; */
-}
+
 
 .searchFormInHeader {
     background: transparent;
