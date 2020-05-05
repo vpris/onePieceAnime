@@ -1361,3 +1361,21 @@ ul.menu>li:hover ul.submenu {
     color: var(--white);
     background-color: var(--reds-color);
 }
+
+#staffInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.staffName {
+    background: rebeccapurple;
+    width: 50%;
+    margin: 10px 0 10px 0;
+}
+
+.staffPosition {
+    background: aqua;
+    width: 50%;
+    margin: 10px 0 10px 0;
+}
