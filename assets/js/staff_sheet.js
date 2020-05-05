@@ -18,7 +18,7 @@
                     '</div>' +
                     '<div class="staffPosition col-md-6">' +
                             r["position"][i] + 
-                    '</div><br>';
+                    '</div>';
                    output += obj;
              }
 
