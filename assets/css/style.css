@@ -1366,6 +1366,12 @@ ul.menu>li:hover ul.submenu {
     flex-direction: row;
 }
 
+.staffUserpic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
 .staffName {
     background: rebeccapurple;
     width: 50%;
