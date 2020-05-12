@@ -79,4 +79,57 @@ $(button).click(function () {
     })
 
 
-    
+/* D&N mode */
+
+// Day/Night mode script
+
+let root = document.querySelector(':root');
+// let rootStyles = getComputedStyle(root);
+// let mainColor = rootStyles.getPropertyValue('--nightModeHColor');
+let dayOrNight = document.querySelector('.dayOrNight');
+localStorage.getItem('numOfClicks');
+console.log(localStorage.getItem('numOfClicks'));
+
+function dayMode() {
+    root.style.setProperty('--reds-color', '#e84848');
+    root.style.setProperty('--secondReds-color', '#c53d3d');
+    root.style.setProperty('--dark', '#232123');
+    root.style.setProperty('--dayBackground', '#edeef0');
+    root.style.setProperty('--white', '#ffffff');
+
+}
+
+function nightMode() {
+    root.style.setProperty('--reds-color', '#181521');
+    root.style.setProperty('--secondReds-color', '#2c0054');
+    root.style.setProperty('--dark', '#340261');
+    root.style.setProperty('--dayBackground', '#201c2b');
+    root.style.setProperty('--white', 'gray');
+}
+
+let numOfClicks = localStorage.getItem('numOfClicks');
+
+if (!numOfClicks) {
+	numOfClicks = 0;
+}
+
+dayOrNight.addEventListener("click", function(){
+
+	if (this.click) {
+		++numOfClicks;
+	}
+	localStorage.setItem('numOfClicks', numOfClicks);
+	console.log(localStorage.getItem('numOfClicks'));
+
+
+	setColor(numOfClicks);
+});
+
+function setColor(numOfClicks) {
+	if (numOfClicks % 2 ) {
+		nightMode();
+	} else {
+		dayMode();
+	}
+}
+setColor(numOfClicks);

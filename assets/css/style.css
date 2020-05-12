@@ -14,6 +14,7 @@
     --twoFont: 'Roboto', serif;
     --twoFontSize: 14px;
     --threeFont: 'Knewave';
+    --dayBackground: '#edeef0';
 }
 
 html, body {
@@ -104,7 +105,7 @@ header {
 
 main {
     width: 100%;
-    background: #edeef0;
+    background: var(--dayBackground);
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -471,7 +472,7 @@ main {
 
 .gridOrList i {
     font-size: 25px;
-    text-shadow: var(--reds-color) 0 0 5px;
+    text-shadow: var(--secondReds-color) 0 0 5px;
 }
 
 .gridOrList button {
@@ -943,6 +944,15 @@ ul.menu>li:hover ul.submenu {
     background: #232123;
     width: 100%;
     padding: 10px 5px 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.settingsSiteHome {
+    background: #232123;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1496,3 +1506,48 @@ ul.menu>li:hover ul.submenu {
   }
 
   /* End preloader */
+
+  .paginationBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0 5px 0;
+    padding: 5px 0 5px 0;
+  }
+
+  .pagination {
+    display: inline-block;
+  }
+
+  .pagination a {
+    color: black;
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding: 2px 10px;
+    text-decoration: none;
+    margin: 0 5px 0 0;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.pagination a.activePagination {
+    background-color: var(--reds-color);
+    color: white;
+    border: 2px solid var(--secondReds-color);
+    border-radius: 50%;
+}
+
+.pagination a:hover:not(.activePagination) {
+    background-color: #ddd;
+    border: 2px solid var(--secondReds-color);
+}
+
+.pagination a:first-child {
+    border-radius: 50%;
+}
+
+.pagination a:last-child {
+    border-radius: 50%;
+}
