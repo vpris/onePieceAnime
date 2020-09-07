@@ -194,12 +194,21 @@ main {
     color: var(--white);
     font-family: var(--oneFont);
     text-transform: uppercase;
-    text-decoration: underline;
+    text-decoration: none;
     align-self: flex-end;
 }
 
 .showMoreAnime:hover {
     background: var(--secondReds-color);
+}
+
+.showMoreAnime a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.showMoreAnime a:hover {
+    color: var(--dark);
 }
 
 .descriptionUltraWide {
@@ -251,12 +260,30 @@ main {
 }
 
 .descriptionLikes i {
-/*    margin-right: 10px; */
+    /*    margin-right: 10px; */
     color: var(--reds-color);
     font-weight: bold;
     -webkit-text-stroke: 1px var(--black);
     text-shadow: var(--dark) 0 0 5px;
-    
+
+}
+
+.descriptionLikes span {
+    margin-right: 20px;
+}
+
+.descriptionLikesComment {
+    margin-right: 20px;
+}
+
+.descriptionLikesComment i {
+    margin-right: 10px;
+    color: var(--reds-color);
+}
+
+.descriptionLikesComment a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 .descrItemWord {
@@ -298,6 +325,7 @@ main {
     padding: 0;
     display: flex;
     flex-direction: column;
+    color: var(--white);
 
 }
 
@@ -312,7 +340,7 @@ main {
     color: var(--white);
     font-family: var(--oneFont);
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 22px;
     margin-bottom: 5px;
 }
 
@@ -407,6 +435,15 @@ main {
     color: var(--reds-color);
 }
 
+.releaseDescriptionItems a {
+    color: var(--reds-color);
+}
+
+.releaseDescriptionItems img {
+    width: 80px;
+    background: var(--white);
+}
+
 .newReleaseItem img {
     width: 100%;
     height: 100%;
@@ -458,7 +495,7 @@ main {
 
 .gridOrListPost {
     /* height: 40px; */
-    padding: 0 5px 0 0;
+    padding: 0 0 0 0;
     margin: 5px 0 5px 0;
     /* background: #fff; */
     /* display: flex; */
@@ -757,6 +794,15 @@ ul.menu>li:hover ul.submenu {
     /* box-shadow: var(--white) 0 0 3px 2px; */
 }
 
+.buttonShow a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.buttonShow a:hover {
+    color: var(--dark);
+}
+
 .carouselLikes i {
     color: var(--reds-color);
     font-weight: bold;
@@ -795,11 +841,12 @@ ul.menu>li:hover ul.submenu {
     align-items: center;
     justify-content: space-between;
     margin: 0 0 5px 0;
-    padding: 0 5px 0 0;
+    padding: 0;
 }
 
 .playerTop {
-    height: 40px;
+    min-height: 40px;
+    padding: 5px;
     width: 100%;
     background: var(--dark);
     display: flex;
@@ -811,14 +858,6 @@ ul.menu>li:hover ul.submenu {
 .playerTopName {
     color: #fff;
     text-transform: uppercase;
-}
-
-.playerVideo {
-    height: 480px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background: var(--dark);
-    width: 100%;
 }
 
 .playerBottom {
@@ -910,7 +949,15 @@ ul.menu>li:hover ul.submenu {
     margin-top: 50px;
 }
 
+.rightSpan {
+    margin-left: 10px;
+    color: var(--reds-color);
+}
+
 .loginDroplet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 0;
     width: 80px;
@@ -1016,6 +1063,31 @@ ul.menu>li:hover ul.submenu {
 .commentatorName {
     color: var(--white);
     margin: 0 20px 0 20px;
+    min-width: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.commentatorName a {
+    color: var(--white);
+}
+
+.userOnline {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--green);
+    margin-right: 10px;
+}
+
+.userOffline {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--reds-color);
+    margin-right: 10px;
 }
 
 .commentDate {
@@ -1023,6 +1095,28 @@ ul.menu>li:hover ul.submenu {
     border-radius: 4px;
     height: 25px;
     padding: 0 5px 0 5px;
+    color: var(--white);
+}
+
+.commentary {
+    margin-left: 20px;
+}
+
+.buttoncomment {
+    text-transform: uppercase;
+    padding: 6px 7px;
+    text-align: center;
+    cursor: pointer;
+    font-weight:400;
+    background-color: var(--dark);
+    color: var(--white);
+    height: 38px;
+    border: 3px solid var(--reds-color);
+    margin-bottom: 20px;
+}
+
+.buttoncomment:hover {
+    background: var(--reds-color);
     color: var(--white);
 }
 
@@ -1095,12 +1189,29 @@ ul.menu>li:hover ul.submenu {
     color: var(--white);
 }
 
+.playerVideo {
+    height: 480px;
+    width: 850px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: var(--dark);
+}
+
 .trailerYt {
     width: 850px;
     height: 480px;
 }
 
 @media (min-width: 400px) and (max-width: 999px) {
+
+    .playerVideo {
+        height: 480px;
+        width: 540px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background: var(--dark);
+    }
+
     .trailerYt {
         width: 540px;
         height: 480px;
@@ -1148,6 +1259,14 @@ ul.menu>li:hover ul.submenu {
         background-size: contain;
         opacity: .5;
         /* background: rebeccapurple; */
+    }
+
+    .userInf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
 }
@@ -1199,6 +1318,14 @@ ul.menu>li:hover ul.submenu {
         /* border: 2px solid var(--reds-color); */
     }
 
+    .userInf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 998px) {
@@ -1220,11 +1347,18 @@ ul.menu>li:hover ul.submenu {
         cursor: pointer;
     }
 
-    .headerMenu {
-        /*margin-left: 100px;*/
+    .userInf {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        background: var(--dark);
+        justify-content: center;
+        width: 200px;
+    }
+
+    .userPict {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
     }
 
     .nav-item {
@@ -1241,6 +1375,10 @@ ul.menu>li:hover ul.submenu {
         background: var(--white);
         border-radius: 20px;
         margin-right: 0px;
+    }
+
+    .releasesCalendar {
+        margin-right: 10px;
     }
 
     .nameUltraWide {
@@ -1278,6 +1416,14 @@ ul.menu>li:hover ul.submenu {
         color: var(--reds-color);
         background: none;
         /* border: 2px solid var(--reds-color); */
+    }
+
+    .userInf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
 }
@@ -1345,7 +1491,7 @@ ul.menu>li:hover ul.submenu {
     }
 
     .loginInHeader .dropdown-menu {
-        margin: 50px -140px 0 0;
+        margin: 29px -95px 0 0;
     }
 
     .dropdown-divider {
@@ -1359,6 +1505,15 @@ ul.menu>li:hover ul.submenu {
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
+
+    .playerVideo {
+        height: 480px;
+        width: 715px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background: var(--dark);
+    }
+
     .trailerYt {
         width: 715px;
         height: 480px;
@@ -1516,8 +1671,9 @@ ul.menu>li:hover ul.submenu {
     padding: 5px 0 5px 0;
   }
 
-  .pagination {
-    display: inline-block;
+  .paginate {
+      list-style-type: none;
+      display: flex;
   }
 
   .pagination a {
@@ -1544,10 +1700,141 @@ ul.menu>li:hover ul.submenu {
     border: 2px solid var(--secondReds-color);
 }
 
-.pagination a:first-child {
-    border-radius: 50%;
+.pages {
+    display: flex;
+
 }
 
-.pagination a:last-child {
+.pages span {
     border-radius: 50%;
+    background: var(--secondReds-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: var(--dark);
+    cursor: no-drop;
+}
+
+.pages .nav_ext{
+    margin-left: 0px;
+}
+
+.pages a {
+    border-radius: 50%;
+    background: var(--reds-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.pages a:hover {
+    background: var(--secondReds-color);
+    color: var(--dark);
+    border: 2px solid var(--dark);
+}
+
+.next {
+    border-radius: 50%;
+    border: none;
+    background: var(--reds-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.prev {
+    border-radius: 50%;
+    border: none;
+    background: var(--reds-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev span {
+    color: var(--dark);
+    cursor: no-drop;
+}
+
+.nav-load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.loadMoreFilter{
+    background: var(--reds-color);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    min-height: 40px;
+    margin: 5px 0 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.loadMoreFilter:hover{
+    border: 4px solid var(--dark);
+    color: var(--dark);
+}
+
+.del_favorites {
+    margin: 3px 0 0 20px;
+    color: var(--reds-color);
+    font-size: 35px;
+}
+
+.add_favorites {
+    margin: 3px 0 0 20px;
+    color: var(--dark);
+    font-size: 35px;
+}
+
+.masha_index {
+    display: none !important;
+}
+
+#dle-content {
+    width: 100%;
+}
+
+#back-top {
+    height: 50px;
+    width: 50px;
+    right: 31px;
+    bottom: 18px;
+    position: fixed;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+    box-shadow: rgba(108, 98, 98, 0.2) 0px 0px 10px 3px;
+    background: rgb(240, 78, 60);
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
 }
